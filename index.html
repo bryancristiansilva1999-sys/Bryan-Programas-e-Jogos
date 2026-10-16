@@ -281,35 +281,16 @@
         linear-gradient(135deg, #111827, #17162c);
     }
 
-    .art::before, .art::after {
+    .art-image {
       position: absolute;
-      width: 175px;
-      height: 175px;
-      border: 1px solid rgb(255 255 255 / 8%);
-      border-radius: 50%;
-      content: "";
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .3s ease;
     }
 
-    .art::after { width: 235px; height: 235px; }
-
-    .art-icon {
-      z-index: 1;
-      display: grid;
-      width: 74px;
-      height: 74px;
-      place-items: center;
-      border: 1px solid rgb(255 255 255 / 18%);
-      border-radius: 22px;
-      background: rgb(8 11 18 / 42%);
-      box-shadow: 0 0 38px color-mix(in srgb, var(--accent), transparent 72%);
-      color: var(--accent);
-      font-size: 32px;
-    }
-
-    .art-city { --accent: #91a8ff; background: radial-gradient(ellipse at 50% 110%, rgb(115 94 255 / 23%), transparent 60%), linear-gradient(135deg, #10192b, #21152d); }
-    .art-island { --accent: #a6f28f; background: radial-gradient(ellipse at 50% 110%, rgb(81 207 148 / 22%), transparent 60%), linear-gradient(135deg, #0f2025, #142a2e); }
-    .art-timeback { --accent: #70f5e3; }
-    .art-panel { --accent: #ff83c2; background: radial-gradient(ellipse at 50% 110%, rgb(255 131 194 / 20%), transparent 60%), linear-gradient(135deg, #201324, #17162c); }
+    .card:hover .art-image { transform: scale(1.04); }
 
     .card-body { padding: 19px 19px 17px; }
 
@@ -478,7 +459,7 @@
 
       <div class="grid" id="project-grid">
         <article class="card" data-category="game">
-          <div class="art art-city"><div class="art-icon" aria-hidden="true">▦</div></div>
+          <div class="art art-city"><img class="art-image" src="assets/bairro-livre.svg" alt="" fetchpriority="high"></div>
           <div class="card-body">
             <div class="card-meta"><span class="tag">Jogo de navegador</span><span class="tag tag-live">No ar</span></div>
             <h3>Bairro Livre</h3>
@@ -488,7 +469,7 @@
         </article>
 
         <article class="card" data-category="game">
-          <div class="art art-island"><div class="art-icon" aria-hidden="true">⌁</div></div>
+          <div class="art art-island"><img class="art-image" src="assets/fuga-da-ilha.png" alt="" loading="lazy"></div>
           <div class="card-body">
             <div class="card-meta"><span class="tag">Roblox · Cooperação</span><span class="tag tag-live">Jogável</span></div>
             <h3>Fuga da Ilha</h3>
@@ -498,12 +479,12 @@
         </article>
 
         <article class="card" data-category="mod">
-          <div class="art art-timeback"><div class="art-icon" aria-hidden="true">↶</div></div>
+          <div class="art art-timeback"><img class="art-image" src="assets/timeback.svg" alt="" loading="lazy"></div>
           <div class="card-body">
             <div class="card-meta"><span class="tag">Minecraft · Forge</span><span class="tag tag-live">Site no ar</span></div>
             <h3>TimeBack</h3>
             <p>Um mod experimental de Minecraft com a ideia de voltar alguns segundos no tempo depois de uma derrota.</p>
-            <a class="card-link" href="https://bryancristiansilva1999-sys.github.io/timeback-site/?refresh=1409" target="_blank" rel="noopener noreferrer">Visitar o site do TimeBack <span aria-hidden="true">↗</span></a>
+            <a class="card-link" href="https://bryancristiansilva1999-sys.github.io/timeback-site/" target="_blank" rel="noopener noreferrer">Visitar o site do TimeBack <span aria-hidden="true">↗</span></a>
           </div>
         </article>
 
