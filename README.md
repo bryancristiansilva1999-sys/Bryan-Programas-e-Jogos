@@ -9,7 +9,7 @@ Abra `index.html` no navegador ou use **Open with Live Server** no VS Code, se t
 ## Publicar no GitHub Pages
 
 1. Crie um repositório no GitHub ou abra o repositório que publica o site.
-2. Envie os arquivos desta pasta para a raiz do repositório, incluindo `index.html` e a pasta `bairro-livre/` completa.
+2. Envie os arquivos desta pasta para a raiz do repositório, incluindo `index.html`, as pastas `assets/` e `bairro-livre/` completas.
 3. Abra **Settings > Pages**.
 4. Em **Build and deployment**, escolha **Deploy from a branch**.
 5. Selecione a branch `main` e a pasta `/ (root)`, depois clique **Save**.
@@ -23,4 +23,4 @@ Abra `bairro-livre/index.html` ou acesse `/bairro-livre/` no site publicado. Os 
 
 ## Jogar Fuga da Ilha
 
-Na página inicial, selecione **Jogar Fuga da Ilha no Roblox** para abrir a experiência publicada no Roblox.
+Na página inicial, selecione **Jogar Fuga da Ilha no Roblox** para abrir a experiência publicada no Roblox. As capas do portfólio ficam em `assets/`; mantenha essa pasta ao publicar para que as imagens dos projetos apareçam.
